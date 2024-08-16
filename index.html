@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corgnati Developer Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./src/assets/favicon.ico">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <img src="./src/assets/logo.png" alt="Corgnati Developer Logo" class="logo">
+            <div class="flags">
+                <img src="./src/assets/italy.png" alt="Italian" class="flag-icon" onclick="translatePage('it')">
+                <img src="./src/assets/usa.png" alt="American" class="flag-icon" onclick="translatePage('en')">
+            </div>
+        </div>
+    </header>
+
+    <section id="profile" class="flex-row">
+        <div class="container flex-row">
+            <div class="left-column">
+                <img src="./src/assets/eudev.jpeg" alt="Corgnati Developer Photo" class="profile-photo">
+            </div>
+            <div class="right-column">
+                <h1 data-key="profile-title">Corgnati Developer</h1>
+                <p data-key="profile-subtitle">Front-End Developer & AI Specialist in Training</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/pedro-corgnati-6a83b6211/" target="_blank"><img
+                            src="./src/assets/linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://www.instagram.com/pedro.corgnati/" target="_blank"><img
+                            src="./src/assets/instagram.png" alt="Instagram"></a>
+                    <a href="https://github.com/Pedrocorgnati" target="_blank"><img src="./src/assets/github.png"
+                            alt="GitHub"></a>
+                    <a href="https://www.facebook.com/pedro.bmmco/" target="_blank"><img src="./src/assets/facebook.png"
+                            alt="Facebook"></a>
+                </div>
+                <button onclick="window.location.href='portfolio.html';" class="portfolio-btn"
+                    data-key="portfolio-btn">View My Portfolio</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 data-key="about-title">About Me</h2>
+            <p data-key="about-text1">I am a versatile professional with a strong foundation in business management and
+                a growing expertise in technology.</p>
+            <p data-key="about-text2">In 2018, I transitioned into programming and founded SuppleSeller, later managing
+                Litoral Fit Suplementos. Since 2023, I've been focused on programming and artificial intelligence,
+                pursuing multiple advanced degrees, including AI and Machine Learning, Software Engineering, and AI in
+                Healthcare Services.</p>
+            <p><strong data-key="tech-title">Technologies:</strong> ReactJs | NextJS | TypeScript | SASS | Tailwind |
+                ES6 | CSS | NodeJS | Python</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 data-key="skills-title">Core Competencies</h2>
+            <ul>
+                <li><strong data-key="skill-1-title">Front-End Web Development:</strong> Expertise in creating dynamic
+                    and responsive user interfaces using modern technologies like ReactJs and NextJS.</li>
+                <li><strong data-key="skill-2-title">Business Management and Strategic Planning:</strong> Proven ability
+                    to lead and grow businesses through strategic planning and execution.</li>
+                <li><strong data-key="skill-3-title">Artificial Intelligence and Machine Learning:</strong> Ongoing
+                    studies and hands-on projects in AI, focusing on real-world applications.</li>
+                <li><strong data-key="skill-4-title">Client Relationship Management:</strong> Skilled in building and
+                    maintaining strong relationships with clients to drive success and satisfaction.</li>
+                <li><strong data-key="skill-5-title">Sales and E-commerce Operations:</strong> Extensive experience in
+                    managing and optimizing e-commerce platforms for better performance and sales growth.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2 data-key="education-title">Education</h2>
+            <ul>
+                <li><strong data-key="education-1-title">Bachelor's in Business Administration - Centro Universitário
+                        Salesiano de São Paulo</strong> (2007 - 2011)
+                    <p data-key="education-1-desc">This degree provided me with a strong foundation in business
+                        management, finance, and marketing, preparing me to lead and innovate in various business
+                        settings.</p>
+                </li>
+                <li><strong data-key="education-2-title">MBA in Strategic Business Management - UNISAL</strong> (March
+                    2011 - March 2013)
+                    <p data-key="education-2-desc">Focused on strategic planning, competitive analysis, and corporate
+                        strategy, this MBA enhanced my ability to develop and implement business growth strategies.</p>
+                </li>
+                <li><strong data-key="education-3-title">MBA in Controllership and Finance - UNISAL</strong> (March 2013
+                    - March 2015)
+                    <p data-key="education-3-desc">This program provided in-depth knowledge of financial management,
+                        auditing practices, and strategic financial planning, aligning financial strategy with business
+                        goals.</p>
+                </li>
+                <li><strong data-key="education-4-title">CS50: Introduction to Computer Science - Harvard
+                        University</strong> (March 2023 - August 2023)
+                    <p data-key="education-4-desc">An intensive course that introduced me to computer science
+                        fundamentals, including algorithms, data structures, and programming in C, Python, and
+                        JavaScript.</p>
+                </li>
+                <li><strong data-key="education-5-title">Bachelor's in Software Engineering - Anhanguera
+                        Educacional</strong> (July 2023 - July 2027)
+                    <p data-key="education-5-desc">This ongoing program is enhancing my skills in software development,
+                        covering data structures, algorithms, software architecture, and modern web technologies.</p>
+                </li>
+                <li><strong data-key="education-6-title">Fullstack Developer - Kenzie Academy Brasil</strong> (January
+                    2023 - January 2024)
+                    <p data-key="education-6-desc">An immersive program focusing on front-end and back-end development,
+                        equipping me with the skills to build dynamic and responsive web applications.</p>
+                </li>
+                <li><strong data-key="education-7-title">MBA in Artificial Intelligence - Facuvale</strong> (November
+                    2023 - April 2024)
+                    <p data-key="education-7-desc">Currently pursuing this program to gain expertise in AI technologies,
+                        including machine learning, neural networks, and data science.</p>
+                </li>
+                <li><strong data-key="education-8-title">MBA in AI and Machine Learning - Unopar</strong> (May 2024 -
+                    April 2025)
+                    <p data-key="education-8-desc">This ongoing program focuses on developing AI-driven solutions, with
+                        hands-on projects in machine learning and AI frameworks.</p>
+                </li>
+                <li><strong data-key="education-9-title">MBA in AI for Healthcare Services - Unyleya</strong> (June 2024
+                    - July 2025)
+                    <p data-key="education-9-desc">Currently pursuing this program, focusing on the application of AI in
+                        healthcare, including predictive analytics, medical imaging, and personalized medicine.</p>
+                </li>
+                <li><strong data-key="education-10-title">Master's in Artificial Intelligence - AGTU</strong> (July 2024
+                    - December 2026)
+                    <p data-key="education-10-desc">This 1200-hour program provides deep expertise in AI, covering
+                        machine learning, NLP, computer vision, and AI system design.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 data-key="contact-title">Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" data-key="contact-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p data-key="footer-text">© 2024 Corgnati Developer. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

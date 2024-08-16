@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #0044cc;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 50px;
+}
+
+.flags img {
+    width: 30px;
+    height: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.flags img:hover {
+    transform: scale(1.1);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#profile {
+    background-color: #fff;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+}
+
+#profile .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-column {
+    flex: 1;
+}
+
+.right-column {
+    flex: 2;
+    padding-left: 40px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+section {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact {
+    background: #333;
+    color: #fff;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    width: 100%;
+    padding: 15px;
+    background: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#contact-form button:hover {
+    background: #e64a19;
+}
+
+footer {
+    background: #0044cc;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 8px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.social-links a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a img:hover {
+    transform: scale(1.1);
+}
+
+.portfolio-btn,
+.back-btn {
+    background: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 20px;
+}
+
+.portfolio-btn:hover,
+.back-btn:hover {
+    background: #e64a19;
+}
+
+#gameCanvas {
+    display: none;
+    background-color: black;
+    margin: 20px auto;
+    border: 1px solid white;
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+}
+
+#startGameBtn,
+#restartGameBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#startGameBtn:hover,
+#restartGameBtn:hover {
+    background-color: #e64a19;
+}
+
+#restartGameBtn {
+    display: none;
+}
+
+/* Footer positioned fixed at the bottom */
+footer {
+    background: #0044cc;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 8px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

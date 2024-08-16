@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corgnati Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <img src="./src/assets/logo.png" alt="Corgnati Developer Logo" class="logo">
+            <div class="flags">
+                <img src="./src/assets/italy.png" alt="Italian" class="flag-icon" onclick="translatePage('it')">
+                <img src="./src/assets/usa.png" alt="American" class="flag-icon" onclick="translatePage('en')">
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Portfolio</h1>
+        <p>Currently Under Construction</p>
+        <p>Play Space Invaders while you wait!</p>
+
+        <!-- Game Instructions -->
+        <p class="game-instructions">
+            Use the arrow keys to move the spaceship.<br>
+            Refresh the page to play again after Game Over.
+        </p>
+
+        <button id="startGameBtn">Start Game</button>
+        <button id="restartGameBtn" style="display:none;">Restart Game</button>
+        <canvas id="gameCanvas"></canvas>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Corgnati Developer. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
