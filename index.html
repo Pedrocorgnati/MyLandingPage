@@ -2,160 +2,457 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corgnati Developer Profile</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="./src/assets/favicon.ico">
+    <!-- Metadata of the Webpage -->
+    <!-- Character-set Metadata -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Viewport Metadata -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Description Metadata-->
+    <meta name="description" content="Portfolio Website" />
+    <!-- Author Metadata -->
+    <meta name="author" content="Pedro Corgnati" />
+    <!-- Keyword Metadata -->
+    <meta name="keywords" content="Pedro Corgnati, Pedro Corgnati Italy,  Pedro Corgnati front-end developer, Pedro Corgnati back-end developer, Pedro Corgnati full-stack developer,
+        Pedro Corgnati, Pedro Corgnati Website" />
+    <!-- Webpage Logo -->
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <!-- Webpage Title -->
+    <title>Pedro Corgnati</title>
+
+    <!-- Import CSS: Main Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
 </head>
 
 <body>
-    <header class="main-header">
-        <div class="container">
-            <img src="./src/assets/logo.png" alt="Corgnati Developer Logo" class="logo">
-            <div class="flags">
-                <img src="./src/assets/italy.png" alt="Italian" class="flag-icon" onclick="translatePage('it')">
-                <img src="./src/assets/usa.png" alt="American" class="flag-icon" onclick="translatePage('en')">
+    <div id="particles-js">
+        <div class="header">
+            <h1>
+                <span class="site-title">PEDRO CORGNATI</span>
+                <span class="site-description">Front-end Developer • Full-stack Developer</span>
+            </h1>
+            <div class="header-icons">
+                <a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/pedrocorgnati/">
+                    <i class="icon fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a aria-label="My Github Profile" target="_blank" href="https://github.com/Pedrocorgnati">
+                    <i class="icon fa fa-github-alt" aria-hidden="true"></i>
+                </a>
+                <a aria-label="My Résumé" target="_blank" href="https://www.corgnati.com/resume.html">
+                    <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
+                </a>
+                <a aria-label="Send Email" href="mailto:corgnati.pedro@gmail.com" target="_blank"><i
+                        class="icon fa fa-envelope"></i></a>
+            </div>
+            <div class="header-links">
+                <a class="link" href="#about" data-scroll>About Me</a>
+                <a class="link" href="#projects" data-scroll>Experience andProjects</a>
+                <a class="link" href="#knowledge" data-scroll>Knowledge</a>
             </div>
         </div>
-    </header>
+        <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+    </div>
 
-    <section id="profile" class="flex-row">
-        <div class="container flex-row">
-            <div class="left-column">
-                <img src="./src/assets/eudev.jpeg" alt="Corgnati Developer Photo" class="profile-photo">
-            </div>
-            <div class="right-column">
-                <h1 data-key="profile-title">Corgnati Developer</h1>
-                <p data-key="profile-subtitle">Front-End Developer & AI Specialist in Training</p>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/pedro-corgnati-6a83b6211/" target="_blank"><img
-                            src="./src/assets/linkedin.png" alt="LinkedIn"></a>
-                    <a href="https://www.instagram.com/pedro.corgnati/" target="_blank"><img
-                            src="./src/assets/instagram.png" alt="Instagram"></a>
-                    <a href="https://github.com/Pedrocorgnati" target="_blank"><img src="./src/assets/github.png"
-                            alt="GitHub"></a>
-                    <a href="https://www.facebook.com/pedro.bmmco/" target="_blank"><img src="./src/assets/facebook.png"
-                            alt="Facebook"></a>
-                </div>
-                <button onclick="window.location.href='portfolio.html';" class="portfolio-btn"
-                    data-key="portfolio-btn">View My Portfolio</button>
-            </div>
-        </div>
-    </section>
-
+    <!-- About Section -->
     <section id="about">
-        <div class="container">
-            <h2 data-key="about-title">About Me</h2>
-            <p data-key="about-text1">I am a versatile professional with a strong foundation in business management and
-                a growing expertise in technology.</p>
-            <p data-key="about-text2">In 2018, I transitioned into programming and founded SuppleSeller, later managing
-                Litoral Fit Suplementos. Since 2023, I've been focused on programming and artificial intelligence,
-                pursuing multiple advanced degrees, including AI and Machine Learning, Software Engineering, and AI in
-                Healthcare Services.</p>
-            <p><strong data-key="tech-title">Technologies:</strong> ReactJs | NextJS | TypeScript | SASS | Tailwind |
-                ES6 | CSS | NodeJS | Python</p>
+        <!-- User Introduction-->
+        <div class="user-details">
+            <h1>My Story</h1>
+            <picture>
+                <source type="image/webp" src="./assets/img/webp/Professional-Picture-Me.webp" alt="Professional Me"
+                    width="20%" style="border-radius: 50%" />
+                <img src="./assets/img/jpg/Professional-Picture-Me.jpg" alt="Professional Me" width="20%"
+                    style="border-radius: 50%" />
+            </picture>
+            <p>
+                I'm a Frontend Developer with experience delivering modern, scalable, and high-performance web
+                applications
+                using Next.js, React, TypeScript, Tailwind, and Sass. I have contributed to startups and medium-to-large
+                companies, building complex systems, dashboards, browser extensions, and professional UIs designed in
+                Figma. I
+                combine my strong technical expertise with a user-centered approach, creating clean architectures,
+                reusable
+                components, accessible interfaces, and automated testing (Vitest, Playwright, Cypress). Capable of
+                independently
+                owning full front-end lifecycles when needed, while also collaborating effectively within structured
+                international teams.
+            </p>
+        </div>
+
+        <!-- User Specifics -->
+        <div class="user">
+            <!-- Technology Stack #1: Languages -->
+            <div class="tech">
+                <h2>Languages</h2>
+                <img width="75px" height="75px"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+                <img width="75px" height="75px"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+                <img width="75px" height="75px"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                <img width="75px" height="75px"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
+
+                <p>My favorite languages for systems programming, software engineering, and data analysis.</p>
+            </div>
+
+            <!-- Technology Stack #2: Front-End -->
+            <div class="tech">
+                <h2>Front-End</h2>
+                <img width="75px" height="75px"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
+                <img width="75px" height="75px"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+                <img width="75px" height="75px"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+                <img width="75px" height="75px"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" />
+
+
+                <p>My preferred technologies for front-end web development and component design.</p>
+            </div>
+
+
+
+            <!-- Technology Stack #4: Tools
+            <div class="tech">
+                <h2>Tools</h2>
+                <img width="75px" height="75px"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+
+                <img width="75px" height="75px"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
+                <img width="75px" height="75px"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+                <img width="75px" height="75px"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />
+                <p>My favorite tools for version control, code editing, and container orchestration.</p>
+            </div> -->
+            <div class="tech">
+                <h2>Testing</h2>
+                <img width="75px" height="75px"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitest/vitest-original.svg" />
+
+                <img width="75px" height="75px"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cypressio/cypressio-original.svg" />
+
+                <img width="75px" height="75px"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/playwright/playwright-original.svg" />
+
+                <img width="75px" height="75px"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg" />
+
+                <p>My favorite tools for testing. (Unit Testing, Integration Testing, End-to-End Testing)</p>
+            </div>
+            <!-- Technology Stack #3: Back-End -->
+            <div class="tech">
+                <h2>Back-End</h2>
+                <img width="75px" height="75px"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
+                <img width="75px" height="75px"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" />
+                <img width="75px" height="75px"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" />
+                <img width="75px" height="75px"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+                <p>My preferred technologies for back-end web programming and database architecture.</p>
+            </div>
         </div>
     </section>
 
-    <section id="skills">
-        <div class="container">
-            <h2 data-key="skills-title">Core Competencies</h2>
-            <ul>
-                <li><strong data-key="skill-1-title">Front-End Web Development:</strong> Expertise in creating dynamic
-                    and responsive user interfaces using modern technologies like ReactJs and NextJS.</li>
-                <li><strong data-key="skill-2-title">Business Management and Strategic Planning:</strong> Proven ability
-                    to lead and grow businesses through strategic planning and execution.</li>
-                <li><strong data-key="skill-3-title">Artificial Intelligence and Machine Learning:</strong> Ongoing
-                    studies and hands-on projects in AI, focusing on real-world applications.</li>
-                <li><strong data-key="skill-4-title">Client Relationship Management:</strong> Skilled in building and
-                    maintaining strong relationships with clients to drive success and satisfaction.</li>
-                <li><strong data-key="skill-5-title">Sales and E-commerce Operations:</strong> Extensive experience in
-                    managing and optimizing e-commerce platforms for better performance and sales growth.</li>
-            </ul>
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="user-details">
+            <h1>Experience and Projects</h1>
+        </div>
+
+        <!-- User Project #1: Personal Résumé Website -->
+        <div class="user-projects">
+            <div class="images-right">
+                <picture>
+                    <source type="image/webp" srcset="./assets/img/webp/Personal-Resume-Website.webp"
+                        alt="Personal Website" />
+                    <img alt="Personal Website" src="./assets/img/jpg/Personal-Resume-Website.jpg" />
+                </picture>
+            </div>
+            <div class="contents" style="text-align: center">
+                <h3>Personal Website</h3>
+                <div>
+                    <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/react.svg"
+                        style="filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%)" />
+                    &nbsp;
+                    <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/bootstrap.svg"
+                        style="filter: invert(24%) sepia(14%) saturate(2270%) hue-rotate(222deg) brightness(102%) contrast(90%)" />
+                    &nbsp;
+                    <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
+                </div>
+                <p style="text-align: justify">
+                    I developed and designed a website using ReactJS and Bootstrap, hosted on Github Pages, to showcase
+                    my web
+                    presence, story, work experience, education, projects, and achievements in an interactive and
+                    visually-appealing format.
+                </p>
+                <a class="project-link" target="_blank" href="https://www.corgnati.com/">Check it out!</a>
+            </div>
+        </div>
+
+        <!-- User Project #2: Summer 2020 Project -->
+        <div class="user-projects">
+            <div class="images-left">
+                <picture>
+                    <source type="image/webp" srcset="./assets/img/webp/Scoretube-landing.webp"
+                        alt="Scoretube Landing Page" />
+                    <img alt="Scoretube Landing Page" src="./assets/img/jpg/Scoretube-landing.jpg" />
+                </picture>
+            </div>
+            <div class="contents-right" style="text-align: center">
+                <h3>Scoretube Landing Page</h3>
+                <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/react.svg"
+                    style="filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%)" />
+                &nbsp;
+                <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/css3.svg"
+                    style="filter: invert(33%) sepia(29%) saturate(3844%) hue-rotate(184deg) brightness(90%) contrast(84%)" />
+                &nbsp;
+                <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
+                <p style="text-align: justify">
+                    I developed a landing page for Scoretube, a platform for creating and sharing score videos. The
+                    website is a
+                    simple and clean design that is easy to use and navigate. It includes a header with a navigation
+                    menu, a main
+                    section with a list of featured videos, a footer with a contact form and social
+                    media links.
+                </p>
+                <a class="project-link" target="_blank" href="https://www.corgnati.com/">Check it
+                    out!</a>
+            </div>
+        </div>
+
+        <!-- User Project #3: ApexCrypto -->
+        <div class="user-projects">
+            <div class="images-right">
+                <picture>
+                    <source type="image/webp" srcset="./assets/img/webp/Apexcrypto-website.webp" alt="ApexCrypto" />
+                    <img alt="ApexCrypto" src="./assets/img/jpg/Apexcrypto-website.jpg" />
+                </picture>
+            </div>
+            <div class="contents" style="text-align: center">
+                <h3>ApexCrypto Website</h3>
+                <div>
+                    <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/react.svg"
+                        style="filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%)" />
+                    &nbsp;
+                    <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/css3.svg"
+                        style="filter: invert(33%) sepia(29%) saturate(3844%) hue-rotate(184deg) brightness(90%) contrast(84%)" />
+                    &nbsp;
+                    <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
+                </div>
+                <p style="text-align: justify">
+                    I developed a website for ApexCrypto, a cryptocurrency exchange, using ReactJS and CSS Grid Layouts
+                    for design
+                    and hosted on GitHub Pages. The website is a simple and clean design that is easy to use and
+                    navigate. It
+                    includes a header
+                    with a navigation menu, a main section with a list of featured coins, a footer with a contact form
+                    and social
+                    media links.
+                </p>
+                <a class="project-link" target="_blank" href="https://www.corgnati.com/">
+                    Check it out!
+                </a>
+            </div>
+        </div>
+
+        <!-- Use Project #4: Passkey Dashboard -->
+        <div class="user-projects">
+            <div class="images-left">
+                <picture>
+                    <source type="image/webp" srcset="./assets/img/webp/Passkey-dashboard.webp"
+                        alt="Passkey Dashboard" />
+                    <img alt="Passkey Dashboard" src="./assets/img/jpg/Passkey-dashboard.jpg" />
+                </picture>
+            </div>
+            <div class="contents-right" style="text-align: center">
+                <h3>Passkey Dashboard</h3>
+                <div>
+                    <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/react.svg"
+                        style="filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%)" />
+                    &nbsp;
+                    <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/css3.svg"
+                        style="filter: invert(33%) sepia(29%) saturate(3844%) hue-rotate(184deg) brightness(90%) contrast(84%)" />
+                    &nbsp;
+                    <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
+                </div>
+                <p style="text-align: justify">
+                    I developed a dashboard for Passkey, a platform for creating and sharing score videos. The website
+                    is a
+                    simple and clean design that is easy to use and navigate. It includes a header with a navigation
+                    menu, a main
+                    section with a list of featured videos, a footer with a contact form and social
+                    media links.
+                </p>
+                <a class="project-link" target="_blank" href="https://www.corgnati.com/">
+                    Check it out!
+                </a>
+            </div>
+        </div>
+
+        <!-- User Project #3: ApexSwift -->
+        <div class="user-projects">
+            <div class="images-right">
+                <picture>
+                    <source type="image/webp" srcset="./assets/img/webp/ApexSwift-dashboard.webp" alt="ApexSwift" />
+                    <img alt="ApexSwift" src="./assets/img/jpg/ApexSwift-dashboard.jpg" />
+                </picture>
+            </div>
+            <div class="contents" style="text-align: center">
+                <h3>ApexSwift Dashboard</h3>
+                <div>
+                    <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/react.svg"
+                        style="filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%)" />
+                    &nbsp;
+                    <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/css3.svg"
+                        style="filter: invert(33%) sepia(29%) saturate(3844%) hue-rotate(184deg) brightness(90%) contrast(84%)" />
+                    &nbsp;
+                    <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
+                </div>
+                <p style="text-align: justify">
+                    I developed a website for ApexSwift, a cryptocurrency exchange, using ReactJS and CSS Grid Layouts
+                    for design
+                    and hosted on GitHub Pages. The website is a simple and clean design that is easy to use and
+                    navigate. It
+                    includes a header
+                    with a navigation menu, a main section with a list of featured coins, a footer with a contact form
+                    and social
+                    media links.
+                </p>
+                <a class="project-link" target="_blank" href="https://www.corgnati.com/">
+                    Check it out!
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Knowledge Section -->
+    <section id="about">
+        <!-- User Introduction-->
+        <div class="course-details">
+            <h1>Knowledge</h1>
+            <h3>Bachelor's Degree in Computer Software Engineering - Anhanguera 2021-2025</h3>
+            <p>
+                I graduated in Software Engineering from Anhanguera Educacional in July 2025, where I am deepening my
+                knowledge in software development and engineering principles. The curriculum covers a wide range of
+                topics, including data structures, algorithms, software architecture, database management, and web
+                development. My focus is on modern programming languages ​​and frameworks, particularly JavaScript,
+                React.js, Next.js, Node.js, and TypeScript.
+            </p>
+        </div>
+        <div class="course-details">
+            <h3>Master of Science in Artificial Intelligence - AGTU 2024-2026</h3>
+            <p>
+                Pursuing a Master's in Artificial Intelligence at AGTU - American Global Tech University, a
+                comprehensive 1200-hour program designed to provide deep expertise in AI (07/24 - 12/26). This rigorous
+                course covers a wide array of topics, including machine learning, neural networks, natural language
+                processing (NLP), and computer vision. The curriculum emphasizes practical applications of AI, from
+                developing intelligent systems to optimizing algorithms for performance and scalability.
+            </p>
+        </div>
+        <div class="course-details">
+            <h3>CS50x - Harvard University 2023</h3>
+            <p>
+                Completed CS50: Introduction to Computer Science, a prestigious course offered by Harvard University,
+                from March 2023 to August 2023. This course provided a strong foundation in computer science principles,
+                covering essential topics such as algorithms, data structures, software engineering, and web
+                development. The curriculum included hands-on programming in languages like C, Python, and JavaScript,
+                enabling me to build efficient and scalable applications.
+            </p>
+        </div>
+        <div class="course-details">
+            <h3>MBA in Artificial Intelligence in Healthcare Services - Unyleya 2024-2025</h3>
+            <p>
+                Through this program, I actively engage in projects that address real-world healthcare challenges,
+                applying AI to enhance diagnostic accuracy, optimize treatment strategies, and improve patient care. The
+                curriculum covers key areas such as machine learning, deep learning, data analysis, and AI-driven
+                decision-making, with a strong focus on ethical considerations and regulatory frameworks in medicine. By
+                exploring AI's role in predictive analytics, personalized medicine, and operational efficiency, I am
+                gaining hands-on experience in developing innovative solutions for the healthcare sector.
+            </p>
+        </div>
+        <div class="course-details">
+            <h3>MBA in Artificial Intelligence and Machine Learning - Unopar 2024-2025</h3>
+            <p>
+                I graduated in an MBA in Artificial Intelligence and Machine Learning at Unopar from May 2024 to April
+                2025. This program is designed to provide in-depth knowledge of AI technologies and machine learning
+                algorithms, with a focus on practical applications in diverse industries. The curriculum covers topics
+                such as supervised and unsupervised learning, neural networks, natural language processing (NLP), and
+                data analytics.
+            </p>
+        </div>
+        <div class="course-details">
+            <h3>Fullstack Developer Bootcamp at Kenzie Academy 2023-2024</h3>
+            <p>
+                I finished the Fullstack Developer program at Kenzie Academy Brasil from January 2023 to January 2024.
+                This intensive course provides a comprehensive education in both front-end and back-end development,
+                covering languages and frameworks such as JavaScript, React.js, Node.js, and Python. The curriculum is
+                designed to equip students with the skills needed to build dynamic, responsive, and scalable web
+                applications.
+            </p>
+        </div>
+        <div class="course-details">
+            <h3>Bachelor's Degree in Business Administration and Management - UNISAL 2007-2011</h3>
+            <p>
+                Completed a Bachelor's degree in Business Administration at Centro Universitário Salesiano de São Paulo
+                in 2011. The program provided a comprehensive education in business management, finance, marketing, and
+                organizational behavior. Through a blend of theoretical knowledge and practical experience, I developed
+                strong skills in strategic planning, financial analysis, and business operations.
+            </p>
+        </div>
+        <div class="course-details">
+            <h3>MBA in Accounting and finance - UNISAL 2013-2015</h3>
+            <p>
+                Completed an MBA in Controllership and Finance at Centro Universitário Salesiano de São Paulo (UNISAL)
+                from March 2013 to March 2015. This program provided in-depth knowledge of financial management,
+                auditing practices, and strategic financial planning. The curriculum covered key areas such as corporate
+                finance, cost control, budgeting, and financial reporting, with a strong emphasis on aligning financial
+                strategy with business goals.
+            </p>
+        </div>
+        <div class="course-details">
+            <h3>MBA in Strategic Business Management - UNISAL 2011-2013</h3>
+            <p>
+                Completed an MBA in Strategic Business Management at Centro Universitário Salesiano de São Paulo
+                (UNISAL) from March 2011 to March 2013. This program provided advanced knowledge in strategic planning,
+                business analysis, and organizational leadership. The curriculum covered essential topics such as
+                corporate strategy, competitive positioning, and business development, with a focus on driving long-term
+                success and growth.
+
+            </p>
+        </div>
+        <div class="course-details">
+            <h3>MBA in Global Business Management - UC Silva Henriquez 2010-2010</h3>
+            <p>
+                Completed an MBA in Global Business Management at Universidad Católica Cardenal Raúl Silva Henríquez in
+                Santiago, Chile, from July 2010 to December 2010. This intensive program focused on the complexities of
+                managing businesses in a globalized economy. The curriculum covered key areas such as international
+                trade, global market strategies, cross-cultural management, and multinational operations.
+
+
+            </p>
         </div>
     </section>
 
-    <section id="education">
-        <div class="container">
-            <h2 data-key="education-title">Education</h2>
-            <ul>
-                <li><strong data-key="education-1-title">Bachelor's in Business Administration - Centro Universitário
-                        Salesiano de São Paulo</strong> (2007 - 2011)
-                    <p data-key="education-1-desc">This degree provided me with a strong foundation in business
-                        management, finance, and marketing, preparing me to lead and innovate in various business
-                        settings.</p>
-                </li>
-                <li><strong data-key="education-2-title">MBA in Strategic Business Management - UNISAL</strong> (March
-                    2011 - March 2013)
-                    <p data-key="education-2-desc">Focused on strategic planning, competitive analysis, and corporate
-                        strategy, this MBA enhanced my ability to develop and implement business growth strategies.</p>
-                </li>
-                <li><strong data-key="education-3-title">MBA in Controllership and Finance - UNISAL</strong> (March 2013
-                    - March 2015)
-                    <p data-key="education-3-desc">This program provided in-depth knowledge of financial management,
-                        auditing practices, and strategic financial planning, aligning financial strategy with business
-                        goals.</p>
-                </li>
-                <li><strong data-key="education-4-title">CS50: Introduction to Computer Science - Harvard
-                        University</strong> (March 2023 - August 2023)
-                    <p data-key="education-4-desc">An intensive course that introduced me to computer science
-                        fundamentals, including algorithms, data structures, and programming in C, Python, and
-                        JavaScript.</p>
-                </li>
-                <li><strong data-key="education-5-title">Bachelor's in Software Engineering - Anhanguera
-                        Educacional</strong> (July 2023 - July 2027)
-                    <p data-key="education-5-desc">This ongoing program is enhancing my skills in software development,
-                        covering data structures, algorithms, software architecture, and modern web technologies.</p>
-                </li>
-                <li><strong data-key="education-6-title">Fullstack Developer - Kenzie Academy Brasil</strong> (January
-                    2023 - January 2024)
-                    <p data-key="education-6-desc">An immersive program focusing on front-end and back-end development,
-                        equipping me with the skills to build dynamic and responsive web applications.</p>
-                </li>
-                <li><strong data-key="education-7-title">MBA in Artificial Intelligence - Facuvale</strong> (November
-                    2023 - April 2024)
-                    <p data-key="education-7-desc">Currently pursuing this program to gain expertise in AI technologies,
-                        including machine learning, neural networks, and data science.</p>
-                </li>
-                <li><strong data-key="education-8-title">MBA in AI and Machine Learning - Unopar</strong> (May 2024 -
-                    April 2025)
-                    <p data-key="education-8-desc">This ongoing program focuses on developing AI-driven solutions, with
-                        hands-on projects in machine learning and AI frameworks.</p>
-                </li>
-                <li><strong data-key="education-9-title">MBA in AI for Healthcare Services - Unyleya</strong> (June 2024
-                    - July 2025)
-                    <p data-key="education-9-desc">Currently pursuing this program, focusing on the application of AI in
-                        healthcare, including predictive analytics, medical imaging, and personalized medicine.</p>
-                </li>
-                <li><strong data-key="education-10-title">Master's in Artificial Intelligence - AGTU</strong> (July 2024
-                    - December 2026)
-                    <p data-key="education-10-desc">This 1200-hour program provides deep expertise in AI, covering
-                        machine learning, NLP, computer vision, and AI system design.</p>
-                </li>
-            </ul>
-        </div>
-    </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2 data-key="contact-title">Contact Me</h2>
-            <form id="contact-form">
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="Your Email" required>
-                <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit" data-key="contact-btn">Send Message</button>
-            </form>
-        </div>
-    </section>
 
-    <footer>
-        <div class="container">
-            <p data-key="footer-text">© 2024 Corgnati Developer. All rights reserved.</p>
-        </div>
+    <footer class="footer">
+        <p>&copy; Pedro Corgnati, 2025</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Import JS: Particles Theme -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Import JS: Sweet Scroll -->
+    <script src="./assets/js/sweet-scroll.min.js"></script>
+    <!-- Import JS: Google Analytics -->
+    <script src="./assets/js/google-analytics.js"></script>
+    <!-- Import JS: Main Script -->
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
