@@ -192,7 +192,7 @@
                     presence, story, work experience, education, projects, and achievements in an interactive and
                     visually-appealing format.
                 </p>
-                <a class="project-link" target="_blank" href="https://www.corgnati.com/">Check it out!</a>
+                <button class="project-link project-video-trigger" type="button">Check it out!</button>
             </div>
         </div>
 
@@ -222,8 +222,8 @@
                     section with a list of featured videos, a footer with a contact form and social
                     media links.
                 </p>
-                <a class="project-link" target="_blank" href="https://www.corgnati.com/">Check it
-                    out!</a>
+                <button class="project-link project-video-trigger" type="button">Check it
+                    out!</button>
             </div>
         </div>
 
@@ -256,9 +256,9 @@
                     and social
                     media links.
                 </p>
-                <a class="project-link" target="_blank" href="https://www.corgnati.com/">
+                <button class="project-link project-video-trigger" type="button">
                     Check it out!
-                </a>
+                </button>
             </div>
         </div>
 
@@ -290,9 +290,9 @@
                     section with a list of featured videos, a footer with a contact form and social
                     media links.
                 </p>
-                <a class="project-link" target="_blank" href="https://www.corgnati.com/">
+                <button class="project-link project-video-trigger" type="button">
                     Check it out!
-                </a>
+                </button>
             </div>
         </div>
 
@@ -325,12 +325,25 @@
                     and social
                     media links.
                 </p>
-                <a class="project-link" target="_blank" href="https://www.corgnati.com/">
+                <button class="project-link project-video-trigger" type="button">
                     Check it out!
-                </a>
+                </button>
             </div>
         </div>
     </section>
+
+    <div id="video-popover" class="video-popover" aria-hidden="true">
+        <div class="video-popover__backdrop" data-popover-close></div>
+        <div class="video-popover__dialog" role="dialog" aria-modal="true" aria-labelledby="video-popover-title">
+            <button class="video-popover__close" type="button" aria-label="Close video" data-popover-close>&times;</button>
+            <div class="video-popover__body">
+                <video id="video-popover-player" class="video-popover__player" controls playsinline preload="metadata">
+                    Sorry, your browser doesn't support embedded videos.
+                </video>
+            </div>
+        </div>
+    </div>
+
     <!-- Knowledge Section -->
     <section id="about">
         <!-- User Introduction-->
@@ -453,6 +466,8 @@
     <script src="./assets/js/google-analytics.js"></script>
     <!-- Import JS: Main Script -->
     <script src="./assets/js/main.js"></script>
+    <!-- Import JS: Video Popover -->
+    <script src="./assets/js/video-popover.js"></script>
 </body>
 
 </html>
