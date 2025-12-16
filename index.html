@@ -22,6 +22,58 @@
 
     <!-- Import CSS: Main Stylesheet -->
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <style>
+        .cta-hero {
+            margin-top: 32px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .cta-button {
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            gap: 10px !important;
+            padding: 16px 30px !important;
+            min-width: 240px;
+            border-radius: 14px !important;
+            background: linear-gradient(135deg, #2bc0e4 0%, #5a4ad1 100%) !important;
+            color: #fff !important;
+            font-weight: 800 !important;
+            letter-spacing: .6px !important;
+            text-transform: uppercase !important;
+            text-decoration: none !important;
+            font-size: 16px !important;
+            line-height: 1.1 !important;
+            border: 1px solid rgba(255, 255, 255, 0.25) !important;
+            box-shadow: 0 18px 44px rgba(43, 192, 228, 0.35) !important;
+            transition: transform .2s ease, box-shadow .2s ease, background .2s ease, opacity .2s ease !important;
+            position: relative !important;
+            cursor: pointer !important;
+            box-sizing: border-box !important;
+        }
+
+        .cta-button:hover,
+        .cta-button:active {
+            transform: translateY(-3px) !important;
+            box-shadow: 0 22px 48px rgba(90, 74, 209, 0.38) !important;
+            opacity: .96 !important;
+            background: linear-gradient(135deg, #34e89e 0%, #0f5bd7 100%) !important;
+        }
+
+        .cta-button:focus-visible {
+            outline: 2px solid #fff !important;
+            outline-offset: 3px !important;
+        }
+
+        .cta-banner {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
@@ -48,6 +100,9 @@
                 <a class="link" href="#about" data-scroll>About Me</a>
                 <a class="link" href="#projects" data-scroll>Experience andProjects</a>
                 <a class="link" href="#knowledge" data-scroll>Knowledge</a>
+            </div>
+            <div class="cta-hero">
+                <a class="cta-button" href="./form.html">Get your free quote now</a>
             </div>
         </div>
         <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
@@ -187,16 +242,16 @@
                     <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
                 </div>
                 <p style="text-align: justify">
-                    I developed and designed a website using ReactJS and Bootstrap, hosted on Github Pages, to showcase
-                    my web
-                    presence, story, work experience, education, projects, and achievements in an interactive and
-                    visually-appealing format.
+                    Personal portfolio website designed to present my frontend expertise, professional background, and
+                    real-world projects in a clear and engaging way. Built with a strong visual identity, fast
+                    performance, and smooth navigation to create a confident first impression for clients and
+                    recruiters.
                 </p>
                 <button class="project-link project-video-trigger" type="button">Check it out!</button>
             </div>
         </div>
 
-        <!-- User Project #2: Summer 2020 Project -->
+        <!-- User Project #2: Scoretube Landing Page -->
         <div class="user-projects">
             <div class="images-left">
                 <picture>
@@ -215,12 +270,9 @@
                 &nbsp;
                 <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
                 <p style="text-align: justify">
-                    I developed a landing page for Scoretube, a platform for creating and sharing score videos. The
-                    website is a
-                    simple and clean design that is easy to use and navigate. It includes a header with a navigation
-                    menu, a main
-                    section with a list of featured videos, a footer with a contact form and social
-                    media links.
+                    High-conversion landing page for an AI-powered platform that helps users evaluate YouTube videos
+                    before watching. Designed to communicate value instantly, drive installs, and guide visitors through
+                    a localized, responsive experience with clear messaging and strong calls to action.
                 </p>
                 <button class="project-link project-video-trigger" type="button">Check it
                     out!</button>
@@ -247,14 +299,9 @@
                     <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
                 </div>
                 <p style="text-align: justify">
-                    I developed a website for ApexCrypto, a cryptocurrency exchange, using ReactJS and CSS Grid Layouts
-                    for design
-                    and hosted on GitHub Pages. The website is a simple and clean design that is easy to use and
-                    navigate. It
-                    includes a header
-                    with a navigation menu, a main section with a list of featured coins, a footer with a contact form
-                    and social
-                    media links.
+                    Conversion-focused landing page for a crypto education platform, combining bold visuals, video hero
+                    sections, and clear pricing presentation. Built for speed and responsiveness, the site delivers
+                    trust, clarity, and a strong brand presence across all devices.
                 </p>
                 <button class="project-link project-video-trigger" type="button">
                     Check it out!
@@ -283,12 +330,9 @@
                     <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
                 </div>
                 <p style="text-align: justify">
-                    I developed a dashboard for Passkey, a platform for creating and sharing score videos. The website
-                    is a
-                    simple and clean design that is easy to use and navigate. It includes a header with a navigation
-                    menu, a main
-                    section with a list of featured videos, a footer with a contact form and social
-                    media links.
+                    Production-ready Next.js dashboard for marketing teams to manage campaigns, workspaces, and creative
+                    assets. Features fast navigation, advanced filtering, data-rich tables, and a polished interface
+                    designed to support complex, real-world workflows.
                 </p>
                 <button class="project-link project-video-trigger" type="button">
                     Check it out!
@@ -316,14 +360,9 @@
                     <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
                 </div>
                 <p style="text-align: justify">
-                    I developed a website for ApexSwift, a cryptocurrency exchange, using ReactJS and CSS Grid Layouts
-                    for design
-                    and hosted on GitHub Pages. The website is a simple and clean design that is easy to use and
-                    navigate. It
-                    includes a header
-                    with a navigation menu, a main section with a list of featured coins, a footer with a contact form
-                    and social
-                    media links.
+                    Responsive Next.js dashboard created for a technology company focused on turning ideas into global
+                    businesses. Built to handle data-heavy finance operations, with interactive charts, user management,
+                    and a clean, scalable interface optimized for desktop and mobile use.
                 </p>
                 <button class="project-link project-video-trigger" type="button">
                     Check it out!
@@ -349,7 +388,7 @@
     <section id="about">
         <!-- User Introduction-->
         <div class="course-details">
-            <h1>Knowledge</h1>
+            <h1>Knowledge and Education</h1>
             <h3>Bachelor's Degree in Computer Software Engineering - Anhanguera 2021-2025</h3>
             <p>
                 I graduated in Software Engineering from Anhanguera Educacional in July 2025, where I am deepening my
@@ -454,6 +493,13 @@
     </section>
 
 
+    <section class="cta-banner">
+        <div class="cta-banner__content">
+            <h2>Ready to start your project?</h2>
+            <p>Send the details and get a personalized quote in minutes.</p>
+            <a class="cta-button" href="./form.html">Get your free quote now</a>
+        </div>
+    </section>
 
     <footer class="footer">
         <p>&copy; Pedro Corgnati, 2025</p>
