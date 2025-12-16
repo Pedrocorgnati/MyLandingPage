@@ -5,12 +5,101 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Form Page</title>
+    <title>Request a Quote</title>
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <style>
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px 30px;
+            min-width: 240px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, #2bc0e4 0%, #5a4ad1 100%);
+            color: #fff;
+            font-weight: 800;
+            letter-spacing: .6px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 16px;
+            line-height: 1.1;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow: 0 18px 44px rgba(43, 192, 228, 0.35);
+            transition: transform .2s ease, box-shadow .2s ease, background .2s ease, opacity .2s ease;
+            position: relative;
+            cursor: pointer;
+            box-sizing: border-box;
+        }
+
+        .cta-button:hover,
+        .cta-button:active {
+            transform: translateY(-3px);
+            box-shadow: 0 22px 48px rgba(90, 74, 209, 0.38);
+            opacity: .96;
+            background: linear-gradient(135deg, #34e89e 0%, #0f5bd7 100%);
+        }
+
+        .cta-button:focus-visible {
+            outline: 2px solid #fff;
+            outline-offset: 3px;
+        }
+
+        select,
+        option {
+            background-color: #0f1118;
+            color: #fff;
+        }
+    </style>
 </head>
 
-<body style="display: flex; min-height: 100vh; align-items: center; justify-content: center; background: #0d0d0f; color: #fff; margin: 0;">
-    <h1>Form Page</h1>
+<body style="min-height: 100vh; margin: 0; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #0d0d0f 0%, #181824 100%); color: #fff; font-family: 'Nunito Sans', sans-serif;">
+    <div style="width: min(900px, 92vw); background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 18px; padding: 36px; box-shadow: 0 22px 60px rgba(0, 0, 0, 0.35); backdrop-filter: blur(6px);">
+        <h1 style="margin-top: 0; margin-bottom: 12px; font-size: 2.4rem; text-align: center; color: #dcdcdc;">Request a Quote</h1>
+        <p style="margin-top: 0; margin-bottom: 24px; text-align: center; color: #dcdcdc;">Share the essentials of your project and I’ll send a tailored proposal.</p>
+        <form style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px;">
+            <label style="display: flex; flex-direction: column; gap: 6px; font-weight: 700; color: #f5f5f5;">Full name
+                <input required type="text" name="name" placeholder="Jane Doe"
+                    style="padding: 12px 14px; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.18); background: rgba(255, 255, 255, 0.06); color: #fff; outline: none;">
+            </label>
+            <label style="display: flex; flex-direction: column; gap: 6px; font-weight: 700; color: #f5f5f5;">Email
+                <input required type="email" name="email" placeholder="jane@email.com"
+                    style="padding: 12px 14px; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.18); background: rgba(255, 255, 255, 0.06); color: #fff; outline: none;">
+            </label>
+            <label style="display: flex; flex-direction: column; gap: 6px; font-weight: 700; color: #f5f5f5;">Project type
+                <select name="projectType" style="padding: 12px 14px; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.18); background: rgba(255, 255, 255, 0.06); color: #fff; outline: none;">
+                    <option value="landing">Landing page</option>
+                    <option value="webapp">Web app / Dashboard</option>
+                    <option value="website">Company website</option>
+                    <option value="consulting">Consulting</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+            <label style="display: flex; flex-direction: column; gap: 6px; font-weight: 700; color: #f5f5f5;">Estimated budget
+                <select name="budget" style="padding: 12px 14px; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.18); background: rgba(255, 255, 255, 0.06); color: #fff; outline: none;">
+                    <option value="under2k">Under $2k</option>
+                    <option value="2k-5k">$2k–$5k</option>
+                    <option value="5k-10k">$5k–$10k</option>
+                    <option value="10k-plus">$10k+</option>
+                </select>
+            </label>
+            <label style="grid-column: 1 / -1; display: flex; flex-direction: column; gap: 6px; font-weight: 700; color: #f5f5f5;">Timeline
+                <select name="timeline" style="padding: 12px 14px; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.18); background: rgba(255, 255, 255, 0.06); color: #fff; outline: none;">
+                    <option value="asap">ASAP</option>
+                    <option value="2-4w">2–4 weeks</option>
+                    <option value="1-2m">1–2 months</option>
+                    <option value="flexible">Flexible</option>
+                </select>
+            </label>
+            <label style="grid-column: 1 / -1; display: flex; flex-direction: column; gap: 6px; font-weight: 700; color: #f5f5f5;">Project details
+                <textarea name="details" rows="5" placeholder="Goals, scope, links, and any constraints."
+                    style="padding: 12px 14px; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.18); background: rgba(255, 255, 255, 0.06); color: #fff; outline: none; resize: vertical;"></textarea>
+            </label>
+            <div style="grid-column: 1 / -1; display: flex; justify-content: center; margin-top: 8px;">
+                <button type="submit" class="cta-button">Get your free quote now</button>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
