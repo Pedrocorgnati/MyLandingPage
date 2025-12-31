@@ -38,6 +38,14 @@ document.addEventListener('DOMContentLoaded', () => {
             techLabels: ['Next.js', 'React', 'Node.js', 'TypeScript']
         },
         {
+            id: 'quackcoin',
+            title: 'QuackCoin',
+            description: 'High-conversion landing page for a crypto utility ecosystem, built with bold visuals, playful brand voice, and clear CTAs. Designed to drive waitlist signups with a custom form flow, UTM tracking, and HubSpot integration, while keeping the experience fast, responsive, and engaging on any device.',
+            video: './assets/video/Quackcoin.mp4',
+            filters: ['landing', 'blockchain'],
+            techLabels: ['HTML', 'CSS', 'TypeScript']
+        },
+        {
             id: 'apexcrypto',
             title: 'ApexCrypto Website',
             description: 'Conversion-focused landing page for a crypto education platform, combining bold visuals, video hero sections, and clear pricing presentation. Built for speed and responsiveness, the site delivers trust, clarity, and a strong brand presence across all devices.',
@@ -54,6 +62,14 @@ document.addEventListener('DOMContentLoaded', () => {
             techLabels: ['Next.js', 'React', 'Tailwind CSS', 'TypeScript']
         },
         {
+            id: 'ninekeys',
+            title: 'NineKeys Landing Page',
+            description: 'Premium landing page for a boutique property management brand, focused on storytelling, trust, and conversion. Built with crisp typography, immersive video sections, and a smooth, responsive flow that highlights the 9-step method and real results.',
+            video: './assets/video/Ninekeys.mp4',
+            filters: ['landing'],
+            techLabels: ['HTML', 'CSS', 'JavaScript', 'TypeScript']
+        },
+        {
             id: 'apexswift',
             title: 'ApexSwift Dashboard',
             description: 'Responsive Next.js dashboard created for a technology company focused on turning ideas into global businesses. Built to handle data-heavy finance operations, with interactive charts, user management, and a clean, scalable interface optimized for desktop and mobile use.',
@@ -68,22 +84,6 @@ document.addEventListener('DOMContentLoaded', () => {
             video: './assets/video/Passkey-dashboard.mp4',
             filters: ['dashboard'],
             techLabels: ['Next.js', 'React', 'TypeScript', 'Sass']
-        },
-        {
-            id: 'ninekeys',
-            title: 'NineKeys Landing Page',
-            description: 'Premium landing page for a boutique property management brand, focused on storytelling, trust, and conversion. Built with crisp typography, immersive video sections, and a smooth, responsive flow that highlights the 9-step method and real results.',
-            video: './assets/video/Ninekeys.mp4',
-            filters: ['landing'],
-            techLabels: ['HTML', 'CSS', 'JavaScript', 'TypeScript']
-        },
-        {
-            id: 'quackcoin',
-            title: 'QuackCoin',
-            description: 'High-conversion landing page for a crypto utility ecosystem, built with bold visuals, playful brand voice, and clear CTAs. Designed to drive waitlist signups with a custom form flow, UTM tracking, and HubSpot integration, while keeping the experience fast, responsive, and engaging on any device.',
-            video: './assets/video/Quackcoin.mp4',
-            filters: ['landing', 'blockchain'],
-            techLabels: ['HTML', 'CSS', 'TypeScript']
         },
         {
             id: 'zenminder',
