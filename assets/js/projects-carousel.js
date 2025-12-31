@@ -76,6 +76,30 @@ document.addEventListener('DOMContentLoaded', () => {
             video: './assets/video/Ninekeys.mp4',
             filters: ['landing'],
             techLabels: ['HTML', 'CSS', 'JavaScript', 'TypeScript']
+        },
+        {
+            id: 'quackcoin',
+            title: 'QuackCoin',
+            description: 'High-conversion landing page for a crypto utility ecosystem, built with bold visuals, playful brand voice, and clear CTAs. Designed to drive waitlist signups with a custom form flow, UTM tracking, and HubSpot integration, while keeping the experience fast, responsive, and engaging on any device.',
+            video: './assets/video/Quackcoin.mp4',
+            filters: ['landing', 'blockchain'],
+            techLabels: ['HTML', 'CSS', 'TypeScript']
+        },
+        {
+            id: 'zenminder',
+            title: 'ZenMinder',
+            description: 'Productivity web platform that blends a marketing site with a full dashboard experience. Features email/Google authentication with verification, reminder management, phone verification via API, profile and payment sections, and a rewards marketplace. Built with a responsive, modular UI, smooth routing, and centralized state management for a reliable day-to-day workflow.',
+            video: './assets/video/Zenminder.mp4',
+            filters: ['dashboard', 'saas', 'software', 'landing'],
+            techLabels: ['React', 'TypeScript', 'Firebase', 'Sass']
+        },
+        {
+            id: 'cognuscraft-landing',
+            title: 'Cognuscraft Landing Page',
+            description: 'Brand-focused landing page for Cognuscraft, the company behind some technologies. Presents the mission of empowering humanity through Technology and AI, highlights flagship products, and provides clear paths to privacy policy and contact. Built to communicate credibility, purpose, and innovation with a clean, responsive layout.',
+            video: './assets/video/Cognuscraft.mp4',
+            filters: ['landing'],
+            techLabels: ['HTML', 'CSS', 'JavaScript']
         }
     ];
 
