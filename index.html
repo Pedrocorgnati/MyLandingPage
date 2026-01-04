@@ -98,7 +98,7 @@
             </div>
             <div class="header-links">
                 <a class="link" href="#about" data-scroll>About Me</a>
-                <a class="link" href="#projects" data-scroll>Experience andProjects</a>
+                <a class="link" href="#projects" data-scroll>Experience and Projects</a>
                 <a class="link" href="#knowledge" data-scroll>Knowledge</a>
             </div>
             <div class="cta-hero">
@@ -113,21 +113,24 @@
         <!-- User Introduction-->
         <div class="user-details">
             <h1>My Story</h1>
-            <picture>
-                <source type="image/webp" src="./assets/img/webp/Professional-Picture-Me.webp" alt="Professional Me"
-                    width="20%" style="border-radius: 50%" />
-                <img src="./assets/img/jpg/Professional-Picture-Me.jpg" alt="Professional Me" width="20%"
-                    style="border-radius: 50%" />
-            </picture>
-            <p>
-                I'm a full-stack developer with a Frontend specialization, where I secured my strongest formal roles.
-                I deliver modern, scalable, high-performance web applications using Next.js, React, TypeScript,
-                Tailwind, and Sass, and have shipped complex systems, dashboards, browser extensions, and polished
-                Figma-driven UIs for startups and mid-to-large companies. My full-stack skills are continuously
-                reinforced through freelance projects, while my core focus remains on clean architecture, reusable
-                components, accessible interfaces, and reliable testing (Vitest, Playwright, Cypress), with a strong
-                emphasis on SEO.
-            </p>
+            <div class="about-media">
+                <video class="about-media__video" autoplay muted loop playsinline preload="metadata">
+                    <source src="./assets/study/me.mp4" type="video/mp4" />
+                    <img src="./assets/img/jpg/Professional-Picture-Me.jpg" alt="Professional Me" />
+                </video>
+            </div>
+            <div class="about-lead-wrapper">
+                <p class="about-lead">
+                    I'm a full-stack developer with a Frontend specialization, where I secured my strongest formal
+                    roles.
+                    I deliver modern, scalable, high-performance web applications using Next.js, React, TypeScript,
+                    Tailwind, and Sass, and have shipped complex systems, dashboards, browser extensions, and polished
+                    Figma-driven UIs for startups and mid-to-large companies. My full-stack skills are continuously
+                    reinforced through freelance projects, while my core focus remains on clean architecture, reusable
+                    components, accessible interfaces, and reliable testing (Vitest, Playwright, Cypress), with a strong
+                    emphasis on SEO.
+                </p>
+            </div>
         </div>
 
         <!-- User Specifics -->
@@ -216,7 +219,9 @@
         <div class="projects-carousel__container">
             <div class="projects-carousel__intro">
                 <h1>Experience and Projects</h1>
-                <p>Selected work that blends real-world impact with thoughtful UX and pixel-level execution. Each project highlights modern web stacks, scalable architecture, and a clear focus on business outcomes. Built to perform fast, look premium, and convert visitors into users.</p>
+                <p>Selected work that blends real-world impact with thoughtful UX and pixel-level execution. Each
+                    project highlights modern web stacks, scalable architecture, and a clear focus on business outcomes.
+                    Built to perform fast, look premium, and convert visitors into users.</p>
             </div>
 
             <div class="projects-carousel__filters" data-projects-filters></div>
@@ -257,113 +262,269 @@
     </div>
 
     <!-- Knowledge Section -->
-    <section id="about">
-        <!-- User Introduction-->
-        <div class="course-details">
+    <section id="knowledge" class="knowledge-section">
+        <div class="knowledge-intro">
             <h1>Knowledge and Education</h1>
-            <h3>Bachelor's Degree in Computer Software Engineering at Anhanguera 2021-2025</h3>
-            <p>
-                I graduated in Software Engineering from Anhanguera Educacional in July 2025, where I am deepening my
-                knowledge in software development and engineering principles. The curriculum covers a wide range of
-                topics, including data structures, algorithms, software architecture, database management, and web
-                development. My focus is on modern programming languages ​​and frameworks, particularly JavaScript,
-                React.js, Next.js, Node.js, and TypeScript.
-            </p>
         </div>
-        <div class="course-details">
-            <h3>Master of Science in Artificial Intelligence at AGTU 2025-2027</h3>
-            <p>
-                Pursuing a Master's in Artificial Intelligence at AGTU - American Global Tech University, a
-                comprehensive 1200-hour program designed to provide deep expertise in AI (01/25 - 12/27). This rigorous
-                course covers a wide array of topics, including machine learning, neural networks, natural language
-                processing (NLP), and computer vision. The curriculum emphasizes practical applications of AI, from
-                developing intelligent systems to optimizing algorithms for performance and scalability.
-            </p>
+        <div class="knowledge-carousel__wrapper" data-knowledge-carousel tabindex="0" aria-label="Knowledge carousel">
+            <button class="knowledge-carousel__arrow knowledge-carousel__prev" data-knowledge-prev
+                aria-label="Previous study">
+                <span aria-hidden="true">‹</span>
+            </button>
+            <div class="knowledge-carousel__viewport">
+                <div class="knowledge-carousel__track" data-knowledge-track>
+                    <article id="software-engineering" class="knowledge-card">
+                        <div class="knowledge-card-media">
+                            <video autoplay muted loop playsinline preload="metadata">
+                                <source src="./assets/study/software-engineering.mp4" type="video/mp4" />
+                                Sorry, your browser doesn't support embedded videos.
+                            </video>
+                        </div>
+                        <div class="knowledge-card-body">
+                            <h3>Bachelor's Degree in Computer Software Engineering at Anhanguera 2021-2025</h3>
+                            <p>
+                                I graduated in Software Engineering from Anhanguera Educacional in July 2025, where I am
+                                deepening my
+                                knowledge in software development and engineering principles. The curriculum covers a
+                                wide range of
+                                topics, including data structures, algorithms, software architecture, database
+                                management, and web
+                                development. My focus is on modern programming languages and frameworks, particularly
+                                JavaScript,
+                                React.js, Next.js, Node.js, and TypeScript.
+                            </p>
+                        </div>
+                    </article>
+                    <article id="masters-in-artificial-intelligence" class="knowledge-card">
+                        <div class="knowledge-card-media">
+                            <video autoplay muted loop playsinline preload="metadata">
+                                <source src="./assets/study/masters-in-artificial-intelligence.mp4" type="video/mp4" />
+                                Sorry, your browser doesn't support embedded videos.
+                            </video>
+                        </div>
+                        <div class="knowledge-card-body">
+                            <h3>Master of Science in Artificial Intelligence at AGTU 2025-2027</h3>
+                            <p>
+                                Pursuing a Master's in Artificial Intelligence at AGTU - American Global Tech
+                                University, a
+                                comprehensive 1200-hour program designed to provide deep expertise in AI (01/25 -
+                                12/27). This rigorous
+                                course covers a wide array of topics, including machine learning, neural networks,
+                                natural language
+                                processing (NLP), and computer vision. The curriculum emphasizes practical applications
+                                of AI, from
+                                developing intelligent systems to optimizing algorithms for performance and scalability.
+                            </p>
+                        </div>
+                    </article>
+                    <article id="cs50x" class="knowledge-card">
+                        <div class="knowledge-card-media">
+                            <video autoplay muted loop playsinline preload="metadata">
+                                <source src="./assets/study/cs50x.mp4" type="video/mp4" />
+                                Sorry, your browser doesn't support embedded videos.
+                            </video>
+                        </div>
+                        <div class="knowledge-card-body">
+                            <h3>CS50x at Harvard University 2021</h3>
+                            <p>
+                                Completed CS50: Introduction to Computer Science, a prestigious course offered by
+                                Harvard University,
+                                from March 2021 to September 2021. This course provided a strong foundation in computer
+                                science
+                                principles, covering essential topics such as algorithms, data structures, software
+                                engineering, and web
+                                development. The curriculum included hands-on programming in languages like C, Python,
+                                and JavaScript,
+                                enabling me to build efficient and scalable applications.
+                            </p>
+                        </div>
+                    </article>
+                    <article id="artificial-intelligence-in-healthcare" class="knowledge-card">
+                        <div class="knowledge-card-media">
+                            <video autoplay muted loop playsinline preload="metadata">
+                                <source src="./assets/study/artificial-intelligence-in-healthcare.mp4"
+                                    type="video/mp4" />
+                                Sorry, your browser doesn't support embedded videos.
+                            </video>
+                        </div>
+                        <div class="knowledge-card-body">
+                            <h3>MBA in Artificial Intelligence in Healthcare Services at Unyleya 2024-2025</h3>
+                            <p>
+                                Through this program, I actively engage in projects that address real-world healthcare
+                                challenges,
+                                applying AI to enhance diagnostic accuracy, optimize treatment strategies, and improve
+                                patient care. The
+                                curriculum covers key areas such as machine learning, deep learning, data analysis, and
+                                AI-driven
+                                decision-making, with a strong focus on ethical considerations and regulatory frameworks
+                                in medicine. By
+                                exploring AI's role in predictive analytics, personalized medicine, and operational
+                                efficiency.
+                            </p>
+                        </div>
+                    </article>
+                    <article id="artificial-intelligence-and-machine-learning" class="knowledge-card">
+                        <div class="knowledge-card-media">
+                            <video autoplay muted loop playsinline preload="metadata">
+                                <source src="./assets/study/artificial-intelligence-and-machine-learning.mp4"
+                                    type="video/mp4" />
+                                Sorry, your browser doesn't support embedded videos.
+                            </video>
+                        </div>
+                        <div class="knowledge-card-body">
+                            <h3>MBA in Artificial Intelligence and Machine Learning at Unopar 2022-2023</h3>
+                            <p>
+                                I graduated in an MBA in Artificial Intelligence and Machine Learning at Unopar from May
+                                2022 to April
+                                2023. This program is designed to provide in-depth knowledge of AI technologies and
+                                machine learning
+                                algorithms, with a focus on practical applications in diverse industries. The curriculum
+                                covers topics
+                                such as supervised and unsupervised learning, neural networks, natural language
+                                processing (NLP), and
+                                data analytics.
+                            </p>
+                        </div>
+                    </article>
+                    <article id="fullstack-developer-bootcamp" class="knowledge-card">
+                        <div class="knowledge-card-media">
+                            <video autoplay muted loop playsinline preload="metadata">
+                                <source src="./assets/study/fullstack-developer-bootcamp.mp4" type="video/mp4" />
+                                Sorry, your browser doesn't support embedded videos.
+                            </video>
+                        </div>
+                        <div class="knowledge-card-body">
+                            <h3>Fullstack Developer Bootcamp at Kenzie Academy 2020-2021</h3>
+                            <p>
+                                I finished the Fullstack Developer program at Kenzie Academy Brasil from January 2020 to
+                                January 2021.
+                                This intensive course provides a comprehensive education in both front-end and back-end
+                                development,
+                                covering languages and frameworks such as JavaScript, React.js, Node.js, and Python. The
+                                curriculum is
+                                designed to equip students with the skills needed to build dynamic, responsive, and
+                                scalable web
+                                applications.
+                            </p>
+                        </div>
+                    </article>
+                    <article id="web-development" class="knowledge-card">
+                        <div class="knowledge-card-media">
+                            <video autoplay muted loop playsinline preload="metadata">
+                                <source src="./assets/study/web-development.mp4" type="video/mp4" />
+                                Sorry, your browser doesn't support embedded videos.
+                            </video>
+                        </div>
+                        <div class="knowledge-card-body">
+                            <h3>MBA in Web Development at Facuvale 2020-2021</h3>
+                            <p>
+                                Completed an MBA in Web Development, focused on modern front-end and back-end
+                                technologies, software
+                                architecture, and best practices for building scalable web applications. The program
+                                combined solid
+                                theoretical foundations with hands-on projects, strengthening my skills in
+                                JavaScript/TypeScript,
+                                frameworks, performance optimization, and the full development lifecycle, from planning
+                                and design to
+                                deployment and maintenance.
+                            </p>
+                        </div>
+                    </article>
+                    <article id="controllership-and-finance" class="knowledge-card">
+                        <div class="knowledge-card-media">
+                            <video autoplay muted loop playsinline preload="metadata">
+                                <source src="./assets/study/controllership-and-finance.mp4" type="video/mp4" />
+                                Sorry, your browser doesn't support embedded videos.
+                            </video>
+                        </div>
+                        <div class="knowledge-card-body">
+                            <h3>MBA in Controllership and Finance at UNISAL 2013-2015</h3>
+                            <p>
+                                Completed an MBA in Controllership and Finance at Centro Universitário Salesiano de São
+                                Paulo (UNISAL)
+                                from March 2013 to March 2015. This program provided in-depth knowledge of financial
+                                management,
+                                auditing practices, and strategic financial planning. The curriculum covered key areas
+                                such as corporate
+                                finance, cost control, budgeting, and financial reporting, with a strong emphasis on
+                                aligning financial
+                                strategy with business goals.
+                            </p>
+                        </div>
+                    </article>
+                    <article id="strategic-business-management" class="knowledge-card">
+                        <div class="knowledge-card-media">
+                            <video autoplay muted loop playsinline preload="metadata">
+                                <source src="./assets/study/strategic-business-management.mp4" type="video/mp4" />
+                                Sorry, your browser doesn't support embedded videos.
+                            </video>
+                        </div>
+                        <div class="knowledge-card-body">
+                            <h3>MBA in Strategic Business Management at UNISAL 2011-2013</h3>
+                            <p>
+                                Completed an MBA in Strategic Business Management at Centro Universitário Salesiano de
+                                São Paulo
+                                (UNISAL) from March 2011 to March 2013. This program provided advanced knowledge in
+                                strategic planning,
+                                business analysis, and organizational leadership. The curriculum covered essential
+                                topics such as
+                                corporate strategy, competitive positioning, and business development, with a focus on
+                                driving long-term
+                                success and growth.
+                            </p>
+                        </div>
+                    </article>
+                    <article id="global-business-management" class="knowledge-card">
+                        <div class="knowledge-card-media">
+                            <video autoplay muted loop playsinline preload="metadata">
+                                <source src="./assets/study/global-business-management.mp4" type="video/mp4" />
+                                Sorry, your browser doesn't support embedded videos.
+                            </video>
+                        </div>
+                        <div class="knowledge-card-body">
+                            <h3>MBA in Global Business Management at UC Silva Henriquez 2010-2010</h3>
+                            <p>
+                                Completed an MBA in Global Business Management at Universidad Católica Cardenal Raúl
+                                Silva Henríquez in
+                                Santiago, Chile, from July 2010 to December 2010. This intensive program focused on the
+                                complexities of
+                                managing businesses in a globalized economy. The curriculum covered key areas such as
+                                international
+                                trade, global market strategies, cross-cultural management, and multinational
+                                operations.
+                            </p>
+                        </div>
+                    </article>
+                    <article id="business-administration" class="knowledge-card">
+                        <div class="knowledge-card-media">
+                            <video autoplay muted loop playsinline preload="metadata">
+                                <source src="./assets/study/business-administration.mp4" type="video/mp4" />
+                                Sorry, your browser doesn't support embedded videos.
+                            </video>
+                        </div>
+                        <div class="knowledge-card-body">
+                            <h3>Bachelor's Degree in Business Administration at UNISAL 2007-2010</h3>
+                            <p>
+                                Completed a Bachelor's Degree in Business Administration at Centro Universitário
+                                Salesiano de São Paulo
+                                (UNISAL) from March 2008 to March 2010. This program provided a strong foundation in
+                                business
+                                administration, management, and leadership. The curriculum covered essential topics such
+                                as business
+                                strategy, marketing, finance, and organizational behavior, with a focus on developing
+                                practical skills
+                                for managing businesses in a competitive environment.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <button class="knowledge-carousel__arrow knowledge-carousel__next" data-knowledge-next
+                aria-label="Next study">
+                <span aria-hidden="true">›</span>
+            </button>
         </div>
-        <div class="course-details">
-            <h3>CS50x at Harvard University 2021</h3>
-            <p>
-                Completed CS50: Introduction to Computer Science, a prestigious course offered by Harvard University,
-                from March 2021 to September 2021. This course provided a strong foundation in computer science
-                principles,
-                covering essential topics such as algorithms, data structures, software engineering, and web
-                development. The curriculum included hands-on programming in languages like C, Python, and JavaScript,
-                enabling me to build efficient and scalable applications.
-            </p>
-        </div>
-        <div class="course-details">
-            <h3>MBA in Artificial Intelligence in Healthcare Services at Unyleya 2024-2025</h3>
-            <p>
-                Through this program, I actively engage in projects that address real-world healthcare challenges,
-                applying AI to enhance diagnostic accuracy, optimize treatment strategies, and improve patient care. The
-                curriculum covers key areas such as machine learning, deep learning, data analysis, and AI-driven
-                decision-making, with a strong focus on ethical considerations and regulatory frameworks in medicine. By
-                exploring AI's role in predictive analytics, personalized medicine, and operational efficiency, I am
-                gaining hands-on experience in developing innovative solutions for the healthcare sector.
-            </p>
-        </div>
-        <div class="course-details">
-            <h3>MBA in Artificial Intelligence and Machine Learning at Unopar 2022-2023</h3>
-            <p>
-                I graduated in an MBA in Artificial Intelligence and Machine Learning at Unopar from May 2022 to April
-                2023. This program is designed to provide in-depth knowledge of AI technologies and machine learning
-                algorithms, with a focus on practical applications in diverse industries. The curriculum covers topics
-                such as supervised and unsupervised learning, neural networks, natural language processing (NLP), and
-                data analytics.
-            </p>
-        </div>
-        <div class="course-details">
-            <h3>Fullstack Developer Bootcamp at Kenzie Academy 2020-2021</h3>
-            <p>
-                I finished the Fullstack Developer program at Kenzie Academy Brasil from January 2020 to January 2021.
-                This intensive course provides a comprehensive education in both front-end and back-end development,
-                covering languages and frameworks such as JavaScript, React.js, Node.js, and Python. The curriculum is
-                designed to equip students with the skills needed to build dynamic, responsive, and scalable web
-                applications.
-            </p>
-        </div>
-        <div class="course-details">
-            <h3>MBA in Web Development at Facuvale 2020-2021</h3>
-            <p>
-                Completed an MBA in Web Development, focused on modern front-end and back-end technologies, software
-                architecture, and best practices for building scalable web applications. The program combined solid
-                theoretical foundations with hands-on projects, strengthening my skills in JavaScript/TypeScript,
-                frameworks, performance optimization, and the full development lifecycle, from planning and design to
-                deployment and maintenance.
-            </p>
-        </div>
-        <div class="course-details">
-            <h3>MBA in Controllership and Finance at UNISAL 2013-2015</h3>
-            <p>
-                Completed an MBA in Controllership and Finance at Centro Universitário Salesiano de São Paulo (UNISAL)
-                from March 2013 to March 2015. This program provided in-depth knowledge of financial management,
-                auditing practices, and strategic financial planning. The curriculum covered key areas such as corporate
-                finance, cost control, budgeting, and financial reporting, with a strong emphasis on aligning financial
-                strategy with business goals.
-            </p>
-        </div>
-        <div class="course-details">
-            <h3>MBA in Strategic Business Management at UNISAL 2011-2013</h3>
-            <p>
-                Completed an MBA in Strategic Business Management at Centro Universitário Salesiano de São Paulo
-                (UNISAL) from March 2011 to March 2013. This program provided advanced knowledge in strategic planning,
-                business analysis, and organizational leadership. The curriculum covered essential topics such as
-                corporate strategy, competitive positioning, and business development, with a focus on driving long-term
-                success and growth.
-
-            </p>
-        </div>
-        <div class="course-details">
-            <h3>MBA in Global Business Management at UC Silva Henriquez 2010-2010</h3>
-            <p>
-                Completed an MBA in Global Business Management at Universidad Católica Cardenal Raúl Silva Henríquez in
-                Santiago, Chile, from July 2010 to December 2010. This intensive program focused on the complexities of
-                managing businesses in a globalized economy. The curriculum covered key areas such as international
-                trade, global market strategies, cross-cultural management, and multinational operations.
-
-
-            </p>
-        </div>
+        <div class="knowledge-carousel__dots" data-knowledge-dots></div>
     </section>
 
 
@@ -389,6 +550,8 @@
     <script src="./assets/js/main.js"></script>
     <!-- Import JS: Projects Carousel -->
     <script src="./assets/js/projects-carousel.js"></script>
+    <!-- Import JS: Knowledge Carousel -->
+    <script src="./assets/js/knowledge-carousel.js"></script>
     <!-- Import JS: Video Popover -->
     <script src="./assets/js/video-popover.js"></script>
 </body>
