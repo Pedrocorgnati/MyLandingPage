@@ -22,6 +22,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const projects = [
         {
+            id: 'abitare-holding',
+            title: 'Abitare Holding',
+            description: 'Corporate website for an Italian real estate holding company, showcasing three complementary businesses in a cohesive digital experience. Built with Astro for blazing-fast performance, featuring smooth scroll animations, video backgrounds, and a conversion-focused layout designed to attract investors and partners.',
+            video: './assets/video/abitare-holding.mp4',
+            filters: ['landing'],
+            techLabels: ['Astro', 'Tailwind CSS', 'TypeScript']
+        },
+        {
             id: 'personal-website',
             title: 'Personal Website',
             description: 'Personal portfolio website designed to present my frontend expertise, professional background, and real-world projects in a clear and engaging way. Built with a strong visual identity, fast performance, and smooth navigation to create a confident first impression for clients and recruiters.',
