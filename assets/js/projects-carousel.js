@@ -22,6 +22,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const projects = [
         {
+            id: 'bicoja',
+            title: 'BicoJá',
+            description: 'Complete marketplace platform connecting clients to independent professionals for on-demand services. Built with a fast, responsive web app and a React Native mobile companion, it features a virtual currency system for contact purchases, premium subscriptions with exclusive benefits, real-time notifications, and a powerful admin dashboard for seamless operation management.',
+            video: './assets/video/bicoja.mp4',
+            filters: ['saas', 'software', 'dashboard'],
+            techLabels: ['Next.js', 'React Native', 'Prisma', 'Stripe', 'TypeScript']
+        },
+        {
             id: 'abitare-holding',
             title: 'Abitare Holding',
             description: 'Corporate website for an Italian real estate holding company, showcasing three complementary businesses in a cohesive digital experience. Built with Astro for blazing-fast performance, featuring smooth scroll animations, video backgrounds, and a conversion-focused layout designed to attract investors and partners.',
