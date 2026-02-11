@@ -22,6 +22,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const projects = [
         {
+            id: 'piemontech',
+            title: 'Piemontech',
+            description: 'Full-stack B2B platform built for an Italian tech studio serving SMEs, combining an institutional website, automated landing page builder with Stripe checkout, AI-powered business diagnostics, B2B prospecting engine, and affiliate partner system. Delivers a complete commercial ecosystem with admin dashboard, partner portal, and automated provisioning.',
+            video: './assets/video/piemontech.mp4',
+            filters: ['saas', 'software', 'dashboard'],
+            techLabels: ['Next.js', 'TypeScript', 'Stripe', 'Prisma', 'Claude AI']
+        },
+        {
             id: 'bicoja',
             title: 'BicoJá',
             description: 'Complete marketplace platform connecting clients to independent professionals for on-demand services. Built with a fast, responsive web app and a React Native mobile companion, it features a virtual currency system for contact purchases, premium subscriptions with exclusive benefits, real-time notifications, and a powerful admin dashboard for seamless operation management.',
